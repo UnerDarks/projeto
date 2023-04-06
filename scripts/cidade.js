@@ -103,7 +103,7 @@ function Horarios() {
       "0": "<li>5:50</li><li>08:10</li><li>10:30</li><li>12:20</li><li>14:30</li><li>16:30</li><li>18:30</li>",
       //SABADO
       "6": "<li>10:30</li><li>13:00</li><li>15:00</li><li>17:00</li>",
-      //DIAS ULTEIS
+      //DIAS UTEIS
       "default": "<li>05:30</li><li>07:10</li><li>07:50</li><li>09:50</li><li>11:50</li><li>13:50</li><li>15:50</li><li>17:50</li><li>18:50</li><li>21:30</li>"
     },
     "horariosDiv2": {
@@ -111,7 +111,7 @@ function Horarios() {
       "0": "<li>6:00</li><li>09:00</li><li>12:00</li>",
       //SABADO
       "6": "<li>11:00</li><li>14:00</li><li>17:00</li>",
-      //DIAS ULTEIS
+      //DIAS UTEIS
       "default": "<li>06:00</li><li>07:30</li><li>09:00</li><li>10:30</li><li>12:00</li><li>13:30</li><li>15:00</li><li>16:30</li><li>18:00</li><li>19:30</li><li>21:00</li>"
     }
   };
