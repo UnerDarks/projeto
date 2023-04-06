@@ -31,6 +31,41 @@ document.getElementById("botao1").addEventListener("click", function() {
 document.getElementById("botao2").addEventListener("click", function() {
   toggleDiv("minhaDiv2");
 });
+document.getElementById("botao3").addEventListener("click", function() {
+  toggleDiv("minhaDiv3");
+});
+
+document.getElementById("botao4").addEventListener("click", function() {
+  toggleDiv("minhaDiv4");
+});
+document.getElementById("botao5").addEventListener("click", function() {
+  toggleDiv("minhaDiv5");
+});
+
+document.getElementById("botao6").addEventListener("click", function() {
+  toggleDiv("minhaDiv6");
+});
+document.getElementById("botao7").addEventListener("click", function() {
+  toggleDiv("minhaDiv7");
+});
+
+document.getElementById("botao8").addEventListener("click", function() {
+  toggleDiv("minhaDiv8");
+});
+document.getElementById("botao9").addEventListener("click", function() {
+  toggleDiv("minhaDiv9");
+});
+
+document.getElementById("botao10").addEventListener("click", function() {
+  toggleDiv("minhaDiv10");
+});
+document.getElementById("botao11").addEventListener("click", function() {
+  toggleDiv("minhaDiv11");
+});
+
+document.getElementById("botao12").addEventListener("click", function() {
+  toggleDiv("minhaDiv12");
+});
 
 
 //DIA 
