@@ -113,6 +113,86 @@ function Horarios() {
       "6": "<li>11:00</li><li>14:00</li><li>17:00</li>",
       //DIAS ULTEIS
       "default": "<li>06:00</li><li>07:30</li><li>09:00</li><li>10:30</li><li>12:00</li><li>13:30</li><li>15:00</li><li>16:30</li><li>18:00</li><li>19:30</li><li>21:00</li>"
+    },
+    "horariosDiv3": {
+      //DOMINGO
+      "0": "<li>5:50</li><li>08:10</li><li>10:30</li><li>12:20</li><li>14:30</li><li>16:30</li><li>18:30</li>",
+      //SABADO
+      "6": "<li>10:30</li><li>13:00</li><li>15:00</li><li>17:00</li>",
+      //DIAS ULTEIS
+      "default": "<li>05:30</li><li>07:10</li><li>07:50</li><li>09:50</li><li>11:50</li><li>13:50</li><li>15:50</li><li>17:50</li><li>18:50</li><li>21:30</li>"
+    },
+    "horariosDiv4": {
+      //DOMINGO
+      "0": "<li>6:00</li><li>09:00</li><li>12:00</li>",
+      //SABADO
+      "6": "<li>11:00</li><li>14:00</li><li>17:00</li>",
+      //DIAS ULTEIS
+      "default": "<li>06:00</li><li>07:30</li><li>09:00</li><li>10:30</li><li>12:00</li><li>13:30</li><li>15:00</li><li>16:30</li><li>18:00</li><li>19:30</li><li>21:00</li>"
+    },
+    "horariosDiv5": {
+      //DOMINGO
+      "0": "<li>5:50</li><li>08:10</li><li>10:30</li><li>12:20</li><li>14:30</li><li>16:30</li><li>18:30</li>",
+      //SABADO
+      "6": "<li>10:30</li><li>13:00</li><li>15:00</li><li>17:00</li>",
+      //DIAS ULTEIS
+      "default": "<li>05:30</li><li>07:10</li><li>07:50</li><li>09:50</li><li>11:50</li><li>13:50</li><li>15:50</li><li>17:50</li><li>18:50</li><li>21:30</li>"
+    },
+    "horariosDiv6": {
+      //DOMINGO
+      "0": "<li>6:00</li><li>09:00</li><li>12:00</li>",
+      //SABADO
+      "6": "<li>11:00</li><li>14:00</li><li>17:00</li>",
+      //DIAS ULTEIS
+      "default": "<li>06:00</li><li>07:30</li><li>09:00</li><li>10:30</li><li>12:00</li><li>13:30</li><li>15:00</li><li>16:30</li><li>18:00</li><li>19:30</li><li>21:00</li>"
+    },
+    "horariosDiv7": {
+      //DOMINGO
+      "0": "<li>5:50</li><li>08:10</li><li>10:30</li><li>12:20</li><li>14:30</li><li>16:30</li><li>18:30</li>",
+      //SABADO
+      "6": "<li>10:30</li><li>13:00</li><li>15:00</li><li>17:00</li>",
+      //DIAS ULTEIS
+      "default": "<li>05:30</li><li>07:10</li><li>07:50</li><li>09:50</li><li>11:50</li><li>13:50</li><li>15:50</li><li>17:50</li><li>18:50</li><li>21:30</li>"
+    },
+    "horariosDiv8": {
+      //DOMINGO
+      "0": "<li>6:00</li><li>09:00</li><li>12:00</li>",
+      //SABADO
+      "6": "<li>11:00</li><li>14:00</li><li>17:00</li>",
+      //DIAS ULTEIS
+      "default": "<li>06:00</li><li>07:30</li><li>09:00</li><li>10:30</li><li>12:00</li><li>13:30</li><li>15:00</li><li>16:30</li><li>18:00</li><li>19:30</li><li>21:00</li>"
+    },
+    "horariosDiv9": {
+      //DOMINGO
+      "0": "<li>5:50</li><li>08:10</li><li>10:30</li><li>12:20</li><li>14:30</li><li>16:30</li><li>18:30</li>",
+      //SABADO
+      "6": "<li>10:30</li><li>13:00</li><li>15:00</li><li>17:00</li>",
+      //DIAS ULTEIS
+      "default": "<li>05:30</li><li>07:10</li><li>07:50</li><li>09:50</li><li>11:50</li><li>13:50</li><li>15:50</li><li>17:50</li><li>18:50</li><li>21:30</li>"
+    },
+    "horariosDiv10": {
+      //DOMINGO
+      "0": "<li>6:00</li><li>09:00</li><li>12:00</li>",
+      //SABADO
+      "6": "<li>11:00</li><li>14:00</li><li>17:00</li>",
+      //DIAS ULTEIS
+      "default": "<li>06:00</li><li>07:30</li><li>09:00</li><li>10:30</li><li>12:00</li><li>13:30</li><li>15:00</li><li>16:30</li><li>18:00</li><li>19:30</li><li>21:00</li>"
+    },
+    "horariosDiv11": {
+      //DOMINGO
+      "0": "<li>5:50</li><li>08:10</li><li>10:30</li><li>12:20</li><li>14:30</li><li>16:30</li><li>18:30</li>",
+      //SABADO
+      "6": "<li>10:30</li><li>13:00</li><li>15:00</li><li>17:00</li>",
+      //DIAS ULTEIS
+      "default": "<li>05:30</li><li>07:10</li><li>07:50</li><li>09:50</li><li>11:50</li><li>13:50</li><li>15:50</li><li>17:50</li><li>18:50</li><li>21:30</li>"
+    },
+    "horariosDiv12": {
+      //DOMINGO
+      "0": "<li>6:00</li><li>09:00</li><li>12:00</li>",
+      //SABADO
+      "6": "<li>11:00</li><li>14:00</li><li>17:00</li>",
+      //DIAS ULTEIS
+      "default": "<li>06:00</li><li>07:30</li><li>09:00</li><li>10:30</li><li>12:00</li><li>13:30</li><li>15:00</li><li>16:30</li><li>18:00</li><li>19:30</li><li>21:00</li>"
     }
   };
 
@@ -128,6 +208,46 @@ function Horarios() {
 
   document.getElementById("botao2").addEventListener("click", function() {
     imprimirHorario("horariosDiv2");
+  });
+  
+  document.getElementById("botao3").addEventListener("click", function() {
+    imprimirHorario("horariosDiv3");
+  });
+  
+  document.getElementById("botao4").addEventListener("click", function() {
+    imprimirHorario("horariosDiv4");
+  });
+  
+  document.getElementById("botao5").addEventListener("click", function() {
+    imprimirHorario("horariosDiv5");
+  });
+
+  document.getElementById("botao6").addEventListener("click", function() {
+    imprimirHorario("horariosDiv6");
+  });
+  
+  document.getElementById("botao7").addEventListener("click", function() {
+    imprimirHorario("horariosDiv7");
+  });
+  
+  document.getElementById("botao8").addEventListener("click", function() {
+    imprimirHorario("horariosDiv8");
+  });
+  
+  document.getElementById("botao9").addEventListener("click", function() {
+    imprimirHorario("horariosDiv9");
+  });
+  
+  document.getElementById("botao10").addEventListener("click", function() {
+    imprimirHorario("horariosDiv10");
+  });
+  
+  document.getElementById("botao11").addEventListener("click", function() {
+    imprimirHorario("horariosDiv11");
+  });
+  
+  document.getElementById("botao12").addEventListener("click", function() {
+    imprimirHorario("horariosDiv12");
   });
 }
 
