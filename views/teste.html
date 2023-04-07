@@ -1,48 +1,38 @@
-<style>
-    table,
-    th,
-    td {
-        border: 1px solid;
-    }
-
-    table {
-        width: 100%;
-    }
-</style>
-
 <h3>Página Teste</h3>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <br>
 <div>
-    <p>{{loud retorno.msg}}</p>
-    <div>
-        {{#if}}
-          <p>{{retorno.msg}}</p>
-        {{else}}
-        <div>Não tem retorno</div>
-        {{/if}}
-        <table border="1">
-            <tr>
-                <th>Nome</hd>
-                <th>Endereco</th>
-                <th>Telefone</th>
-                <th>Email</th>
-                <th>Data Nasc</th>
-            </tr>
 
-            {{#each usuarios}}
-            <tr>
-                <td>{{this.nome}}</td>
-                <td>{{this.endereco}}</td>
-                <td>{{this.telefone}}</td>
-                <td>this.email</td>
-                <td>{{this.data_nascimento}}</td>
-
-            </tr>
-            {{/each}}
-
-        </table>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Web Site</th>
+          </tr>
+        </thead>
+        <tbody>
+            {{#forEach   users}}
+          <tr>
+            <th scope="row">{{id}}</th>
+            <td>{{name}}</td>
+            <td>{{username}}</td>
+            <td>{{email}}</td>
+            <td>{{phone}}</td>
+            <td>{{website}}</td>
+          </tr>
+          {{/forEach }}
+         
+        </tbody>
+      </table>
 
 
 
-    </div>
+
+
+    
+
 </div>
