@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var { getAllUsuarios  ,addUsuario } = require('../controller/usuarioController')
+var helpers = require('handlebars-helpers')();
 
 
 //ROTAS
