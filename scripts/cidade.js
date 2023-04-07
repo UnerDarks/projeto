@@ -12,59 +12,59 @@ var diasDaSemana = {
 
 //ANIMAÇÃO
 function toggleDiv(id) {
-  var minhaDiv = document.getElementById(id);
+  var divHidden = document.getElementById(id);
 
-  if (minhaDiv.classList.contains("mostrar")) {
-    minhaDiv.classList.remove("mostrar");
-    minhaDiv.style.display = "none";
+  if (divHidden.classList.contains("mostrar")) {
+    divHidden.classList.remove("mostrar");
+    divHidden.style.display = "none";
   } else {
-    minhaDiv.classList.add("mostrar");
-    minhaDiv.style.display = "block";
-    minhaDiv.scrollIntoView({ behavior: 'smooth' });
+    divHidden.classList.add("mostrar");
+    divHidden.style.display = "block";
+    divHidden.scrollIntoView({ behavior: 'smooth' });
   }
 }
 
 document.getElementById("botao1").addEventListener("click", function () {
-  toggleDiv("minhaDiv1");
+  toggleDiv("divHidden1");
 });
 
 document.getElementById("botao2").addEventListener("click", function () {
-  toggleDiv("minhaDiv2");
+  toggleDiv("divHidden2");
 });
 document.getElementById("botao3").addEventListener("click", function () {
-  toggleDiv("minhaDiv3");
+  toggleDiv("divHidden3");
 });
 
 document.getElementById("botao4").addEventListener("click", function () {
-  toggleDiv("minhaDiv4");
+  toggleDiv("divHidden4");
 });
 document.getElementById("botao5").addEventListener("click", function () {
-  toggleDiv("minhaDiv5");
+  toggleDiv("divHidden5");
 });
 
 document.getElementById("botao6").addEventListener("click", function () {
-  toggleDiv("minhaDiv6");
+  toggleDiv("divHidden6");
 });
 document.getElementById("botao7").addEventListener("click", function () {
-  toggleDiv("minhaDiv7");
+  toggleDiv("divHidden7");
 });
 
 document.getElementById("botao8").addEventListener("click", function () {
-  toggleDiv("minhaDiv8");
+  toggleDiv("divHidden8");
 });
 document.getElementById("botao9").addEventListener("click", function () {
-  toggleDiv("minhaDiv9");
+  toggleDiv("divHidden9");
 });
 
 document.getElementById("botao10").addEventListener("click", function () {
-  toggleDiv("minhaDiv10");
+  toggleDiv("divHidden10");
 });
 document.getElementById("botao11").addEventListener("click", function () {
-  toggleDiv("minhaDiv11");
+  toggleDiv("divHidden11");
 });
 
 document.getElementById("botao12").addEventListener("click", function () {
-  toggleDiv("minhaDiv12");
+  toggleDiv("divHidden12");
 });
 
 

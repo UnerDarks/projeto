@@ -6,17 +6,17 @@
     cursor: pointer;
 }
 /*//TAG <P>--ANIMAÇÃO//*/
-.minhaDiv {
+.divHidden {
     opacity: 0;
     transition: opacity 0.5s ease-out;
     display: none;
   }
   
-  .minhaDiv.mostrar {
+  .divHidden.mostrar {
     opacity: 1;
   }
   
-  .minhaDiv.esconder {
+  .divHidden.esconder {
     opacity: 0;
   }
 
