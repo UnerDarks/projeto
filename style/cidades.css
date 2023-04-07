@@ -59,6 +59,8 @@
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    justify-content: space-between;
+    gap: 16px;
   }
 
   .container .box h3 {
