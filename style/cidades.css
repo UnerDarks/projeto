@@ -55,6 +55,12 @@
     color: var(--cor-terciaria)
   }
 
+  .horarios {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
   .container .box h3 {
     color: var(--cor-terciaria)
   }
