@@ -6,48 +6,48 @@ function Horarios() {
   var horariosObj = {
     "lagoinhaDeFora": {
       //DOMINGO saindo de lagoinha de fora
-      "0": "<li>05:50</li><li class='horarios_baixo'>08:10</li><li>10:30</li><li class='horarios_baixo'>12:20</li><li>14:30</li><li class='horarios_baixo'>16:30</li><li>18:30</li>",
+      "0": "<li>05:50</li><li>08:10</li><li>10:30</li><li>12:20</li><li>14:30</li><li>16:30</li><li>18:30</li>",
 
       //SABADO saindo lagoinha de fora
-      "6": "<li>05:50</li><li class='horarios_baixo'>08:10</li><li>10:30</li><li class='horarios_baixo'>12:20</li><li>14:30</li><li class='horarios_baixo'>16:30</li><li>18:30</li><li class='horarios_baixo'>21:40</li>",
+      "6": "<li>05:50</li><li>08:10</li><li>10:30</li><li>12:20</li><li>14:30</li><li>16:30</li><li>18:30</li><li>21:40</li>",
 
       //DIAS UTEIS saindo lagoinha de fora
-      "default": "<li>06:50</li><li class='horarios_baixo'>08:50</li><li>10:50</li><li class='horarios_baixo'>12:50</li><li>14:50</li><li class='horarios_baixo'>16:50</li><li>18:50</li><li class='horarios_baixo'>19:30</li><li>22:30</li>"
+      "default": "<li>06:50</li><li>08:50</li><li>10:50</li><li>12:50</li><li>14:50</li><li>16:50</li><li>18:50</li><li>19:30</li><li>22:30</li>"
     },
 
     "santosDumont": {
       // domingo do santos dumont
-      "0": "<li>06:50</li><li class='horarios_baixo'>09:30</li><li>11:20</li><li class='horarios_baixo'>13:30</li><li>15:30</li><li class='horarios_baixo'>17:30</li>",
+      "0": "<li>06:50</li><li>09:30</li><li>11:20</li><li>13:30</li><li>15:30</li><li>17:30</li>",
 
       //Sabado saindo santos dumont
-      "6": "<li>06:50</li><li class='horarios_baixo'>09:30</li><li>11:20</li><li class='horarios_baixo'>13:30</li><li>15:30</li><li class='horarios_baixo'>17:30</li><li class='horarios_baixo'>22:15</li>",
+      "6": "<li>06:50</li><li>09:30</li><li>11:20</li><li>13:30</li><li>15:30</li><li>17:30</li><li>22:15</li>",
 
       //DIAS UTEIS saindo santos dumont
-      "default": "<li>6:50</li><li class='horarios_baixo'>08:00</li><li class='horarios_baixo'>8:50</li><li class='horarios_baixo'>10:50</li><li class='horarios_baixo'>12:50</li><li class='horarios_baixo'>14:50</li><li class='horarios_baixo'>16:50</li><li class='horarios_baixo'>17:50</li><li class='horarios_baixo'>18:50</li><li class='horarios_baixo'>19:30</li><li class='horarios_baixo'>22:30</li>"
+      "default": "<li>6:50</li><li>08:00</li><li>8:50</li><li>10:50</li><li>12:50</li><li>14:50</li><li>16:50</li><li>17:50</li><li>18:50</li><li>19:30</li><li>22:30</li>"
 
     },
 
     "aeronautas": {
       //DOMINGO saindo de aeronautas
-      "0": "<li class='horarios_alto'>5:10</li><li class='horarios_baixo'>06:00</li><li class='horarios_baixo'>07:00</li><li class='horarios_alto'>09:30</li><li class='horarios_baixo'>11:30</li><li class='horarios_alto'>13:30</li><li class='horarios_baixo'>15:30</li><li class='horarios_alto'>17:30</li><li class='horarios_baixo'>19:30</li><li class='horarios_alto'>21:30</li>",
+      "0": "<li>5:10</li><li>06:00</li><li>07:00</li><li>09:30</li><li>11:30</li><li>13:30</li><li>15:30</li><li>17:30</li><li>19:30</li><li>21:30</li>",
 
       //SABADO saindo aeronautas
-      "6": "<li class='horarios_alto'>05:10</li><li class='horarios_baixo'>06:00</li><li class='horarios_alto'>07:20</li><li class='horarios_alto'>9:50</li><li class='horarios_baixo'>11:50</li><li class='horarios_alto'>13:30</li><li class='horarios_alto'>15:50</li><li class='horarios_alto'>17:50</li><li class='horarios_baixo'>19:50</li><li class='horarios_alto'>21:30</li>",
+      "6": "<li>05:10</li><li>06:00</li><li>07:20</li><li>9:50</li><li>11:50</li><li>13:30</li><li>15:50</li><li>17:50</li><li>19:50</li><li>21:30</li>",
 
       //DIAS UTEIS saindo do aeronautas
-      "default": "<li class='horarios_alto'>05:10</li><li class='horarios_baixo'>07:10</li><li class='horarios_alto'>08:55</li><li class='horarios_baixo'>10:30</li><li class='horarios_alto'>12:30</li><li class='horarios_alto'>14:30</li><li class='horarios_baixo'>15:30</li><li class='horarios_baixo'>16:20</li><li class='horarios_alto'>17:15</li><li class='horarios_baixo'>18:00</li><li class='horarios_alto'>19:30</li>"
+      "default": "<li>05:10</li><li>07:10</li><li>08:55</li><li>10:30</li><li>12:30</li><li>14:30</li><li>15:30</li><li>16:20</li><li>17:15</li><li>18:00</li><li>19:30</li>"
     },
 
     "lapinha": {
       //DOMINGO saindo de lapinha => aeronautas
-      "0": "<li class='horarios_alto'>3:50</li><li class='horarios_baixo'>05:00</li><li class='horarios_baixo'>06:00</li><li class='horarios_alto'>08:30</li><li class='horarios_baixo'>10:30</li><li class='horarios_alto'>12:30</li><li class='horarios_baixo'>14:30</li><li class='horarios_alto'>16:30</li><li class='horarios_baixo'>18:30</li><li class='horarios_alto'>20:20</li><li class='horarios_baixo'>22:30</li>",
+      "0": "<li>3:50</li><li>05:00</li><li>06:00</li><li>08:30</li><li>10:30</li><li>12:30</li><li>14:30</li><li>16:30</li><li>18:30</li><li>20:20</li><li>22:30</li>",
 
       //SABADO SAINDO DE LAPINHA => aeronautas
       "6": "<li>3:50</li><li>05:00</li><li>06:00</li><li>07:00</li><li>08:30</li><li>10:50</li><li>12:30</li><li>14:30</li><li>16:30</li><li>18:30</li><li>20:30</li>",
 
 
       //DIAS UTEIS saindo da lapinha => aeronautas
-      "default": "<li>03:40</li><li class='horarios_baixo'>04:50</li><li>06:40</li><li class='horarios_baixo'>07:30</li><li>08:10</li><li class='horarios_baixo'>09:50</li><li>11:30</li><li class='horarios_baixo'>13:30</li><li>15:30</li><li class='horarios_baixo'>16:30</li><li>17:45</li>"
+      "default": "<li>03:40</li><li>04:50</li><li>06:40</li><li>07:30</li><li>08:10</li><li>09:50</li><li>11:30</li><li>13:30</li><li>15:30</li><li>16:30</li><li>17:45</li>"
     },
 
     "lapinha/lagos": {
@@ -290,7 +290,7 @@ function Horarios() {
 
     },
 
-    "lapinha": {
+    "lapinha/distritoIndustrial": {
       //DIAS ULTEIS saindo da lapinha
       "default": "<li>05:30</li><li>06:20</li><li>11:40</li><li>15:40</li><li>16:30</li>"
     }
@@ -348,10 +348,9 @@ function Horarios() {
   });
 
   document.getElementById("botao12").addEventListener("click", function () {
-    imprimirHorario("lapinha");
+    imprimirHorario("lapinha/distritoIndustrial");
   });
 }
-
 
 
 Horarios();
