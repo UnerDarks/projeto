@@ -31,10 +31,10 @@ document.getElementById("mostrarDiv").addEventListener("click", function () {
   // Esconde o divHidden1
   toggleDiv("divHidden1");
 
-  // Exibe o divHidden1.1 após um breve intervalo de tempo para garantir que o divHidden1 já esteja escondido
+  // Exibe o divHidden1.1 após um breve intervalo 
   setTimeout(function() {
     toggleDiv("divHidden1.1");
-  }, 500); // 500ms (meio segundo)
+  }, 500); // 500ms
 });
 
 document.getElementById("botao2").addEventListener("click", function () {

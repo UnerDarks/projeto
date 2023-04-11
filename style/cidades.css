@@ -14,10 +14,14 @@
   
   .divHidden.mostrar {
     opacity: 1;
+    transition: opacity 0.5s ease;
+
   }
   
   .divHidden.esconder {
     opacity: 0;
+    transition: opacity 0.5s ease;
+
   }
 
 /*//CONTAINER//*/
