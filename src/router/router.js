@@ -14,7 +14,9 @@ router.get("/formulario", (req, res) => {
 })
 
 router.get("/cidades", (req, res) => {
-    res.render('cidades');
+    res.render('cidades',{
+      
+    });
 })
 
 router.post('/formulario', (req, res) => {

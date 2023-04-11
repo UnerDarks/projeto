@@ -13,7 +13,6 @@ var diasDaSemana = {
 //ANIMAÇÃO
 function toggleDiv(id) {
   var divHidden = document.getElementById(id);
-
   if (divHidden.classList.contains("mostrar")) {
     divHidden.classList.remove("mostrar");
     divHidden.style.display = "none";
@@ -26,6 +25,16 @@ function toggleDiv(id) {
 
 document.getElementById("botao1").addEventListener("click", function () {
   toggleDiv("divHidden1");
+});
+
+document.getElementById("mostrarDiv").addEventListener("click", function () {
+  // Esconde o divHidden1
+  toggleDiv("divHidden1");
+
+  // Exibe o divHidden1.1 após um breve intervalo de tempo para garantir que o divHidden1 já esteja escondido
+  setTimeout(function() {
+    toggleDiv("divHidden1.1");
+  }, 500); // 500ms (meio segundo)
 });
 
 document.getElementById("botao2").addEventListener("click", function () {
@@ -78,12 +87,16 @@ var ano = data.getFullYear();
 function diaCompleto() {
   if (dia < 10) {
     return "0"
+  } else {
+    return ""
   }
 }
 
 function mesCompleto() {
   if (mes < 10) {
     return "0"
+  } else {
+    return ""
   }
 }
 

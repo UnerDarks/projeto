@@ -307,7 +307,7 @@ function Horarios() {
     imprimirHorario("lagoinhaDeFora");
   });
 
-  document.getElementById("botao2").addEventListener("click", function () {
+  document.getElementById("mostrarDiv").addEventListener("click", function () {
     imprimirHorario("aeronautas");
   });
 
@@ -354,3 +354,7 @@ function Horarios() {
 
 
 Horarios();
+
+[
+  {"nomedalinha":"lapinha/distritoIndustrial", "horariDomingo":["05:00"], "horariDDiaUtil":["05:00","09:00"]}
+]
