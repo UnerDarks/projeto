@@ -34,7 +34,7 @@ document.getElementById("mostrarDiv").addEventListener("click", function () {
   // Exibe o divHidden1.1 após um breve intervalo 
   setTimeout(function() {
     toggleDiv("divHidden1.1");
-  }, 500); // 500ms
+  }, 200); // 200ms
 });
 
 document.getElementById("botao2").addEventListener("click", function () {

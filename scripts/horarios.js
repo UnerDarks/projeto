@@ -308,7 +308,7 @@ function Horarios() {
   });
 
   document.getElementById("mostrarDiv").addEventListener("click", function () {
-    imprimirHorario("aeronautas");
+    imprimirHorario("santosDumont");
   });
 
   document.getElementById("botao3").addEventListener("click", function () {
