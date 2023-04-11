@@ -104,4 +104,8 @@ var dataAtual = document.getElementById("dataAtual");
 dataAtual.innerHTML = "Data atual: " + diaCompleto() + dia + "/" + mesCompleto() + mes + "/" + ano + " - " + diasDaSemana[data.getDay()];
 
 //Mudar o horario de acordo com os dias da semana 
-
+var keyCliente = 5;
+var divExibir = document.getElementById("divExibir")
+for (var i = 1; i <= keyCliente; i++) {
+    divExibir.innerHTML += i + '<br>';
+}
