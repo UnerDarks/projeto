@@ -307,7 +307,7 @@ function Horarios() {
     imprimirHorario("lagoinhaDeFora");
   });
 
-  document.getElementById("mostrarDiv").addEventListener("click", function () {
+  document.getElementById("botao1").addEventListener("click", function () {
     imprimirHorario("santosDumont");
   });
 
@@ -356,5 +356,10 @@ function Horarios() {
 Horarios();
 
 [
-  {"nomedalinha":"lapinha/distritoIndustrial", "horariDomingo":["05:00"], "horariDDiaUtil":["05:00","09:00"]}
+  {"nomedalinha":
+  "lagoinhaDeFora",
+   "horarioDomingo":["05:00"],
+   "horarioSabado" : ["05:50", "08:10", "10:30", "12:20", "14:30", "16:30", "18:30", "21:40"],
+    "horarioDiaUtil":["05:00","09:00"]
+  }
 ]
