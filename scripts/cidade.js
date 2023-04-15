@@ -27,16 +27,6 @@ document.getElementById("botao1").addEventListener("click", function () {
   toggleDiv("divHidden1");
 });
 
-document.getElementById("mostrarDiv").addEventListener("click", function () {
-  // Esconde o divHidden1
-  toggleDiv("divHidden1");
-
-  // Exibe o divHidden1.1 após um breve intervalo 
-  setTimeout(function() {
-    toggleDiv("divHidden1.1");
-  }, 200); // 200ms
-});
-
 document.getElementById("botao2").addEventListener("click", function () {
   toggleDiv("divHidden2");
 });

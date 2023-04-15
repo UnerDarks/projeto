@@ -307,7 +307,7 @@ function Horarios() {
     imprimirHorario("lagoinhaDeFora");
   });
 
-  document.getElementById("mostrarDiv").addEventListener("click", function () {
+  document.getElementById("botao1").addEventListener("click", function () {
     imprimirHorario("santosDumont");
   });
 
@@ -356,6 +356,7 @@ function Horarios() {
 Horarios();
 
 [
+
   {
 
     "nomeDaLinha": " lagoinha  DeFora/Santo Dumont 3001",
