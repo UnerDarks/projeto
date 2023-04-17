@@ -1,5 +1,48 @@
 <main class="apresentacao">
     <section class="apresentacao__conteudo">
+        <!--
+
+        {{#forEach horarios }}
+
+        <div class="accordion" id="accordionExample" style="width: 100%;">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne{{@index}}">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne{{@index}}" aria-expanded="false" aria-controls="collapseOne">
+                     {{nomeDaLinha}} 
+                </button>
+              </h2>
+              <div id="collapseOne{{@index}}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                <div class="accordion-body">
+                    {{#forEach partidas}}
+
+                    <p>{{partida}}</p>
+        
+                        <ul>
+                            {{#eachIndex horarioDiaUtil}}
+                                <li>{{item}} </li>
+                            {{/eachIndex }}
+                        </ul>
+                        
+                    {{/forEach}}
+                
+                </div>
+              </div>
+            </div>
+            
+        </div>
+          
+          
+          
+          
+          {{/forEach }}
+          //-->
+
+
+
+
+
+
+
 
         <h1 class="apresentacao_conteudo_titulo">Cidades</h1>
 
@@ -14,18 +57,32 @@
                 <div id="divHidden1" class="container divHidden">
 
                     <div class="box">
-                        
+
                         <h3>Tarifa: R$ 5,60</h3>
                         <p id="dataAtual"></p>
-
-                        <ul id="horariosDiv1" class="horarios"></ul>
-
-                        <h4>Saida Lagoinha de Fora</h4>
-                        <ul id="lagoinhaDeFora" class="horarios"></ul>
-
-                        <h4>Saida Santos Dumont</h4>
-                        <ul id="santosDumont" class="horarios"></ul>
-
+                        {{#forEach horarios}}
+                        <div>
+                          {{#forEach partidas}}
+                            {{#if (eq partida "Partida Santos Dumont")}}
+                              <h3>{{partida}}</h3>
+                              <ul>
+                                {{#eachIndex horarioDiaUtil}}
+                                  <li>{{item}}</li>
+                                {{/eachIndex}}
+                              </ul>
+                            {{/if}}
+                            {{#if (eq partida "Partida Lagoinha De Fora")}}
+                              <h3>{{partida}}</h3>
+                              <ul>
+                                {{#eachIndex horarioDiaUtil}}
+                                  <li>{{item}}</li>
+                                {{/eachIndex}}
+                              </ul>
+                            {{/if}}
+                          {{/forEach}}
+                        </div>
+                      {{/forEach}}
+                      
                     </div>
 
                 </div>
@@ -38,7 +95,7 @@
                         <p id="dataAtual"></p>
 
 
- 
+
                     </div>
 
                 </div>
@@ -77,7 +134,7 @@
 
 
         <div>
-            
+
             <ul style="list-style-type:none">
                 <li class="icone" type="button" id="botao3">
                     <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3003 - Lapinha / Recanto da Lagoa</a>

@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var { getAllUsuarios  ,addUsuario } = require('../controller/usuarioController')
 var helpers = require('handlebars-helpers')();
+var data  = require('../data/data.json');
 
 
 //ROTAS
@@ -14,9 +15,7 @@ router.get("/formulario", (req, res) => {
 })
 
 router.get("/cidades", (req, res) => {
-    res.render('cidades',{
-      
-    });
+    res.render( 'cidades', { horarios:data } );
 })
 
 router.post('/formulario', (req, res) => {
@@ -27,10 +26,8 @@ router.post('/formulario', (req, res) => {
     }else{
         res.render('formulario',{
           erro:  {msg:"Ocorreu um erro ao salvar!"}
-        });
-       
-    }
-    
+        }); 
+    }  
 })
 
 //ROTA TESTE
