@@ -61,8 +61,9 @@
                         <h3>Tarifa: R$ 5,60</h3>
                         <p id="dataAtual"></p>
                         {{#forEach horarios}}
-                        {{#forEach partidas}}
-                          <div>
+                        <div>
+                          {{#forEach partidas}}
+                            {{#if (or (eq partida "Partida Santos Dumont") (eq partida "Partida Lagoinha De Fora"))}}
                             <h3>{{partida}}</h3>
                             <ul>
                               {{#if (diaDaSemana "domingo")}}
@@ -81,10 +82,13 @@
                                 {{/each}}
                               {{/if}}
                             </ul>
-                          </div>
-                        {{/forEach}}
+                            {{/if}}
+                          {{/forEach}}
+                        </div>
                       {{/forEach}}
                       
+
+
                     </div>
 
                 </div>
