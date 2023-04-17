@@ -44,6 +44,23 @@ Handlebars.registerHelper('ifeq', function (a, b, options) {
     return options.inverse(this);
 });
 
+Handlebars.registerHelper('diaDaSemana', function(dia) {
+    const data = new Date();
+    const diaDaSemana = data.getDay();
+  
+    switch (dia) {
+      case 'domingo':
+        return diaDaSemana === 0;
+      case 'sabado':
+        return diaDaSemana === 6;
+      case 'diaUtil':
+        return diaDaSemana >= 1 && diaDaSemana <= 5;
+      default:
+        return false;
+    }
+  });
+  
+
 
 //Servidor
 app.listen(3000, () => {

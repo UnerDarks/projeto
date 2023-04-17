@@ -61,26 +61,28 @@
                         <h3>Tarifa: R$ 5,60</h3>
                         <p id="dataAtual"></p>
                         {{#forEach horarios}}
-                        <div>
-                          {{#forEach partidas}}
-                            {{#if (eq partida "Partida Santos Dumont")}}
-                              <h3>{{partida}}</h3>
-                              <ul>
-                                {{#eachIndex horarioDiaUtil}}
-                                  <li>{{item}}</li>
-                                {{/eachIndex}}
-                              </ul>
-                            {{/if}}
-                            {{#if (eq partida "Partida Lagoinha De Fora")}}
-                              <h3>{{partida}}</h3>
-                              <ul>
-                                {{#eachIndex horarioDiaUtil}}
-                                  <li>{{item}}</li>
-                                {{/eachIndex}}
-                              </ul>
-                            {{/if}}
-                          {{/forEach}}
-                        </div>
+                        {{#forEach partidas}}
+                          <div>
+                            <h3>{{partida}}</h3>
+                            <ul>
+                              {{#if (diaDaSemana "domingo")}}
+                                {{#each horarioDomingo}}
+                                  <li>{{this}}</li>
+                                {{/each}}
+                              {{/if}}
+                              {{#if (diaDaSemana "sabado")}}
+                                {{#each horarioSabado}}
+                                  <li>{{this}}</li>
+                                {{/each}}
+                              {{/if}}
+                              {{#if (diaDaSemana "diaUtil")}}
+                                {{#each horarioDiaUtil}}
+                                  <li>{{this}}</li>
+                                {{/each}}
+                              {{/if}}
+                            </ul>
+                          </div>
+                        {{/forEach}}
                       {{/forEach}}
                       
                     </div>
