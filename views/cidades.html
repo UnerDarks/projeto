@@ -68,17 +68,26 @@
                             <ul>
                               {{#if (diaDaSemana "domingo")}}
                                 {{#each horarioDomingo}}
-                                  <li>{{this}}</li>
+                                  {{#divisivelPor @index 3}}
+                                    <br>
+                                  {{/divisivelPor}}
+                                  <li class="horarios">{{this}}</li>
                                 {{/each}}
                               {{/if}}
                               {{#if (diaDaSemana "sabado")}}
                                 {{#each horarioSabado}}
-                                  <li>{{this}}</li>
+                                  {{#divisivelPor @index 3}}
+                                    <br>
+                                  {{/divisivelPor}}
+                                  <li class="horarios">{{this}}</li>
                                 {{/each}}
                               {{/if}}
                               {{#if (diaDaSemana "diaUtil")}}
                                 {{#each horarioDiaUtil}}
-                                  <li>{{this}}</li>
+                                  {{#divisivelPor @index 6}}
+                                    <br>
+                                  {{/divisivelPor}}
+                                  <li class="horarios">{{this}}</li>
                                 {{/each}}
                               {{/if}}
                             </ul>
@@ -87,8 +96,6 @@
                         </div>
                       {{/forEach}}
                       
-
-
                     </div>
 
                 </div>
