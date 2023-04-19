@@ -15,7 +15,6 @@ function log(){
 //ANIMAÇÃO
 function toggleDiv(id) {
   var divHidden = document.getElementById(id);
-
   if (divHidden.classList.contains("mostrar")) {
     divHidden.classList.remove("mostrar");
     divHidden.style.display = "none";
@@ -80,12 +79,16 @@ var ano = data.getFullYear();
 function diaCompleto() {
   if (dia < 10) {
     return "0"
+  } else {
+    return ""
   }
 }
 
 function mesCompleto() {
   if (mes < 10) {
     return "0"
+  } else {
+    return ""
   }
 }
 
