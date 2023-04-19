@@ -58,6 +58,12 @@
   #dataAtual {
     color: var(--cor-terciaria)
   }
+  
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
 
   .horarios {
     display: inline-block;
@@ -66,7 +72,7 @@
     text-align: center;
     margin-right: 5%;
     margin-bottom: 3%;
-    flex-wrap: wrap;    
+  
   }
 
   .container .box h3 {

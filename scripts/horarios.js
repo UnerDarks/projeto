@@ -6,29 +6,7 @@ function Horarios() {
 
   // Objeto que contém as informações dos horários para cada dia da semana e para cada div
   var horariosObj = {
-    "lagoinhaDeFora": {
-      //DOMINGO saindo de lagoinha de fora
-      "0": "<li>05:50</li><li>08:10</li><li>10:30</li><li>12:20</li><li>14:30</li><li>16:30</li><li>18:30</li>",
-
-      //SABADO saindo lagoinha de fora
-      "6": "<li>05:50</li><li>08:10</li><li>10:30</li><li>12:20</li><li>14:30</li><li>16:30</li><li>18:30</li><li>21:40</li>",
-
-      //DIAS UTEIS saindo lagoinha de fora
-      "default": "<li>06:50</li><li>08:50</li><li>10:50</li><li>12:50</li><li>14:50</li><li>16:50</li><li>18:50</li><li>19:30</li><li>22:30</li>"
-    },
-
-    "santosDumont": {
-      // domingo do santos dumont
-      "0": "<li>06:50</li><li>09:30</li><li>11:20</li><li>13:30</li><li>15:30</li><li>17:30</li>",
-
-      //Sabado saindo santos dumont
-      "6": "<li>06:50</li><li>09:30</li><li>11:20</li><li>13:30</li><li>15:30</li><li>17:30</li><li>22:15</li>",
-
-      //DIAS UTEIS saindo santos dumont
-      "default": "<li>6:50</li><li>08:00</li><li>8:50</li><li>10:50</li><li>12:50</li><li>14:50</li><li>16:50</li><li>17:50</li><li>18:50</li><li>19:30</li><li>22:30</li>"
-
-    },
-
+    
     "aeronautas": {
       //DOMINGO saindo de aeronautas
       "0": "<li>5:10</li><li>06:00</li><li>07:00</li><li>09:30</li><li>11:30</li><li>13:30</li><li>15:30</li><li>17:30</li><li>19:30</li><li>21:30</li>",
