@@ -1,49 +1,5 @@
 <main class="apresentacao">
     <section class="apresentacao__conteudo">
-        <!--
-
-        {{#forEach horarios }}
-
-        <div class="accordion" id="accordionExample" style="width: 100%;">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne{{@index}}">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne{{@index}}" aria-expanded="false" aria-controls="collapseOne">
-                     {{nomeDaLinha}} 
-                </button>
-              </h2>
-              <div id="collapseOne{{@index}}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
-                <div class="accordion-body">
-                    {{#forEach partidas}}
-
-                    <p>{{partida}}</p>
-        
-                        <ul>
-                            {{#eachIndex horarioDiaUtil}}
-                                <li>{{item}} </li>
-                            {{/eachIndex }}
-                        </ul>
-                        
-                    {{/forEach}}
-                
-                </div>
-              </div>
-            </div>
-            
-        </div>
-          
-          
-          
-          
-          {{/forEach }}
-          //-->
-
-
-
-
-
-
-
-
         <h1 class="apresentacao_conteudo_titulo">Cidades</h1>
 
         <div>
@@ -57,14 +13,10 @@
                 <div id="divHidden1" class="container divHidden">
 
                     <div class="box">
-                        <a class="saindo" href="javascript:log()">Saindo de Lagoinha de Fora</a>
-
-                        <a class="saindo">Saindo de Santos Dumont</a>
 
                         <h3>Tarifa: R$ 5,60</h3>
-                        <p id="dataAtual"></p>
 
-                        <ul id="lagoinhaDeFora" class="horarios" ></ul>
+                        <p id="dataAtual"></p>
                         {{#forEach horarios}}
                         <div>
                           {{#forEach partidas}}
@@ -110,7 +62,7 @@
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
 
-                        <p id="dataAtual"></p>
+                        <p id="dataAtual"> </p>
 
 
 

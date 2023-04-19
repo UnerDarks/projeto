@@ -58,26 +58,13 @@
   #dataAtual {
     color: var(--cor-terciaria)
   }
-  
+ 
   ul {
     display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: space-between;
-    gap: 16px;
-    
-  }
-
-  .horarios_baixo {
-
-  }
-
-  .saindo{
-
     flex-wrap: wrap;
     list-style: none;
   }
-
+  
   .horarios {
     display: inline-block;
     
