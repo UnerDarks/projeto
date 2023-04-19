@@ -11,67 +11,47 @@
                 </li>
 
                 <div id="divHidden1" class="container divHidden">
-
                     <div class="box">
-
                         <h3>Tarifa: R$ 5,60</h3>
-
                         <p id="dataAtual"></p>
                         {{#forEach horarios}}
                         <div>
-                          {{#forEach partidas}}
+                            {{#forEach partidas}}
                             {{#if (or (eq partida "Partida Santos Dumont") (eq partida "Partida Lagoinha De Fora"))}}
                             <h3>{{partida}}</h3>
                             <ul>
-                              {{#if (diaDaSemana "domingo")}}
+                                {{#if (diaDaSemana "domingo")}}
                                 {{#each horarioDomingo}}
-                                  {{#divisivelPor @index 3}}
-                                    <br>
-                                  {{/divisivelPor}}
-                                  <li class="horarios">{{this}}</li>
+                                {{#divisivelPor @index 3}}
+                                <br>
+                                {{/divisivelPor}}
+                                <li class="horarios">{{this}}</li>
                                 {{/each}}
-                              {{/if}}
-                              {{#if (diaDaSemana "sabado")}}
+                                {{/if}}
+                                {{#if (diaDaSemana "sabado")}}
                                 {{#each horarioSabado}}
-                                  {{#divisivelPor @index 3}}
-                                    <br>
-                                  {{/divisivelPor}}
-                                  <li class="horarios">{{this}}</li>
+                                {{#divisivelPor @index 3}}
+                                <br>
+                                {{/divisivelPor}}
+                                <li class="horarios">{{this}}</li>
                                 {{/each}}
-                              {{/if}}
-                              {{#if (diaDaSemana "diaUtil")}}
+                                {{/if}}
+                                {{#if (diaDaSemana "diaUtil")}}
                                 {{#each horarioDiaUtil}}
-                                  {{#divisivelPor @index 5}}
-                                    <br>
-                                  {{/divisivelPor}}
-                                  <li class="horarios">{{this}}</li>
+                                {{#divisivelPor @index 5}}
+                                <br>
+                                {{/divisivelPor}}
+                                <li class="horarios">{{this}}</li>
                                 {{/each}}
-                              {{/if}}
+                                {{/if}}
                             </ul>
                             {{/if}}
-                          {{/forEach}}
+                            {{/forEach}}
                         </div>
-                      {{/forEach}}
-                      
+                        {{/forEach}}
                     </div>
-
                 </div>
-
-                <div id="divHidden1.1" class="container divHidden">
-
-                    <div class="box">
-                        <h3>Tarifa: R$ 5,60</h3>
-
-                        <p id="dataAtual"> </p>
-
-
-
-                    </div>
-
-                </div>
-
             </ul>
-
         </div>
 
 
