@@ -35,7 +35,7 @@
   }
   
   
-  .box {
+.box {
     background-color: var(--color-box);
     padding: 20px;
   }
@@ -58,7 +58,7 @@
   #dataAtual {
     color: var(--cor-terciaria)
   }
-  
+ 
   ul {
     display: flex;
     flex-direction: row;
@@ -76,7 +76,7 @@
     flex-wrap: wrap;
     list-style: none;
   }
-
+  
   .horarios {
     display: inline-block;
     

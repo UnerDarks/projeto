@@ -44,15 +44,6 @@ Handlebars.registerHelper('ifeq', function (a, b, options) {
     return options.inverse(this);
 });
 
-Handlebars.registerHelper('divisivelPor', function (index, divisor, options) {
-  if ((index + 1) % divisor === 0) {
-    return options.fn(this);
-  } else {
-    return options.inverse(this);
-  }
-});
-
-
 Handlebars.registerHelper('diaDaSemana', function(dia) {
     const data = new Date();
     const diaDaSemana = data.getDay();
@@ -70,18 +61,7 @@ Handlebars.registerHelper('diaDaSemana', function(dia) {
   });
 
 
-Handlebars.registerHelper('math', function(lvalue, operator, rvalue, options) {
-    lvalue = parseFloat(lvalue);
-    rvalue = parseFloat(rvalue);
-    
-    return {
-        '+': lvalue + rvalue,
-        '-': lvalue - rvalue,
-        '*': lvalue * rvalue,
-        '/': lvalue / rvalue,
-        '%': lvalue % rvalue
-    }[operator];
-});
+
 
 
 

@@ -1,49 +1,5 @@
 <main class="apresentacao">
     <section class="apresentacao__conteudo">
-        <!--
-
-        {{#forEach horarios }}
-
-        <div class="accordion" id="accordionExample" style="width: 100%;">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne{{@index}}">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne{{@index}}" aria-expanded="false" aria-controls="collapseOne">
-                     {{nomeDaLinha}} 
-                </button>
-              </h2>
-              <div id="collapseOne{{@index}}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
-                <div class="accordion-body">
-                    {{#forEach partidas}}
-
-                    <p>{{partida}}</p>
-        
-                        <ul>
-                            {{#eachIndex horarioDiaUtil}}
-                                <li>{{item}} </li>
-                            {{/eachIndex }}
-                        </ul>
-                        
-                    {{/forEach}}
-                
-                </div>
-              </div>
-            </div>
-            
-        </div>
-          
-          
-          
-          
-          {{/forEach }}
-          //-->
-
-
-
-
-
-
-
-
         <h1 class="apresentacao_conteudo_titulo">Cidades</h1>
 
         <div>
@@ -55,76 +11,40 @@
                 </li>
 
                 <div id="divHidden1" class="container divHidden">
-
                     <div class="box">
-                        <a class="saindo" href="javascript:log()">Saindo de Lagoinha de Fora</a>
-
-                        <a class="saindo">Saindo de Santos Dumont</a>
-
                         <h3>Tarifa: R$ 5,60</h3>
                         <p id="dataAtual"></p>
-
-                        <ul id="lagoinhaDeFora" class="horarios" ></ul>
                         {{#forEach horarios}}
                         <div>
-                          {{#forEach partidas}}
+                            {{#forEach partidas}}
                             {{#if (or (eq partida "Partida Santos Dumont") (eq partida "Partida Lagoinha De Fora"))}}
                             <h3>{{partida}}</h3>
                             <ul>
-                              {{#if (diaDaSemana "domingo")}}
+                                {{#if (diaDaSemana "domingo")}}
                                 {{#each horarioDomingo}}
-                                  {{#divisivelPor @index 3}}
-                                    <br>
-                                  {{/divisivelPor}}
-                                  <li class="horarios">{{this}}</li>
+                                <li class="horarios">{{this}}</li>
                                 {{/each}}
-                              {{/if}}
-                              {{#if (diaDaSemana "sabado")}}
+                                {{/if}}
+                                {{#if (diaDaSemana "sabado")}}
                                 {{#each horarioSabado}}
-                                  {{#divisivelPor @index 3}}
-                                    <br>
-                                  {{/divisivelPor}}
-                                  <li class="horarios">{{this}}</li>
+                                <li class="horarios">{{this}}</li>
                                 {{/each}}
-                              {{/if}}
-                              {{#if (diaDaSemana "diaUtil")}}
+                                {{/if}}
+                                {{#if (diaDaSemana "diaUtil")}}
                                 {{#each horarioDiaUtil}}
-                                  {{#divisivelPor @index 5}}
-                                    <br>
-                                  {{/divisivelPor}}
-                                  <li class="horarios">{{this}}</li>
+                                <li class="horarios">{{this}}</li>
                                 {{/each}}
-                              {{/if}}
+                                {{/if}}
                             </ul>
                             {{/if}}
-                          {{/forEach}}
+                            {{/forEach}}
                         </div>
-                      {{/forEach}}
-                      
+                        {{/forEach}}
                     </div>
-
                 </div>
-
-                <div id="divHidden1.1" class="container divHidden">
-
-                    <div class="box">
-                        <h3>Tarifa: R$ 5,60</h3>
-
-                        <p id="dataAtual"></p>
-
-
-
-                    </div>
-
-                </div>
-
             </ul>
-
         </div>
-
-
         <div>
-
             <ul style="list-style-type:none">
 
                 <li class="icone" type="button" id="botao2">
@@ -303,96 +223,61 @@
                     <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3009 - Nossa Senhora de Lourdes / Visão
                         c.atendimento ao Aeronautas</a>
                 </li>
-
                 <div id="divHidden9" class="container divHidden">
 
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
-
                         <p id="dataAtual"></p>
-
                         <ul id="horariosDiv9" class="horarios"></ul>
                         <ul id="aeronautas/nossaSenhoraDeLourdes" class="horarios"></ul>
                     </div>
-
                 </div>
-
-
             </ul>
         </div>
-
-
         <div>
             <ul style="list-style-type:none">
                 <li class="icone" type="button" id="botao10">
                     <a class="apresentacao__conteudo__sugestoes">LINHA 3010 - Morro do Cruzeiro / Vila José Fagundes
                         (atende Jardim Imperial / Acacias)</a>
                 </li>
-
                 <div id="divHidden10" class="container divHidden">
-
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
-
                         <p id="dataAtual"></p>
-
                         <ul id="horariosDiv10" class="horarios"></ul>
                         <ul id="morroDoCruzeiro" class="horarios"></ul>
                     </div>
-
                 </div>
-
-
             </ul>
         </div>
-
-
         <div>
             <ul style="list-style-type:none">
                 <li class="icone" type="button" id="botao11">
                     <a class="apresentacao__conteudo__sugestoes">LINHA 3011 - Lagoa Santa / Aeroporto</a>
                 </li>
-
                 <div id="divHidden11" class="container divHidden">
-
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
-
                         <p id="dataAtual"></p>
-
                         <ul id="horariosDiv11" class="horarios"></ul>
                         <ul id="lagoaSanta" class="horarios"></ul>
                     </div>
-
                 </div>
-
-
-
-
             </ul>
         </div>
-
-
         <div>
             <ul style="list-style-type:none">
                 <li class="icone" type="button" id="botao12">
                     <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3012 - Lapinha / Distrito Industrial</a>
                 </li>
-
                 <div id="divHidden12" class="container divHidden">
-
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
-
                         <p id="dataAtual"></p>
-
                         <ul id="horariosDiv12" class="horarios"></ul>
                         <ul id="lapinha/distritoIndustrial" class="horarios"></ul>
                     </div>
-
                 </div>
-
-
             </ul>
         </div>
 
