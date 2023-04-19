@@ -35,7 +35,7 @@
   }
   
   
-.box {
+  .box {
     background-color: var(--color-box);
     padding: 20px;
   }
@@ -49,6 +49,11 @@
     text-align: center;
   }
 
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
   .container .box h3 {
     text-align: center;
   }
@@ -57,24 +62,6 @@
 
   #dataAtual {
     color: var(--cor-terciaria)
-  }
- 
-  ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: space-between;
-    gap: 16px;
-    
-  }
-
-  .horarios_baixo {
-  }
-
-  .saindo{
-
-    flex-wrap: wrap;
-    list-style: none;
   }
   
   .horarios {
