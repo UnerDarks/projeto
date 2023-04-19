@@ -14,7 +14,7 @@ function Horarios() {
   
   
         //DIAS UTEIS saindo lagoinha de fora
-        "default": "<li>06:50</li><li>08:50</li><li>10:50</li><li>12:50</li><li>14:50</li><li>16:50</li><li>18:50</li><li>19:30</li><li>22:30</li>"
+        "default": "<li>06:50</li><li class='horarios_baixo'>08:50</li><li>10:50</li><li>12:50</li><li>14:50</li><li>16:50</li><li>18:50</li><li>19:30</li><li>22:30</li>"
   
   
   
