@@ -35,7 +35,7 @@
   }
   
   
-  .box {
+.box {
     background-color: var(--color-box);
     padding: 20px;
   }
