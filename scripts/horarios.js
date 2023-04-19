@@ -1,6 +1,6 @@
 
 
-function Horarios() {
+function Horarios() 
     var data = new Date();
     var diaDaSemana = data.getDay();
   
