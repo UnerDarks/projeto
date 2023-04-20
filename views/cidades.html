@@ -58,10 +58,33 @@
                         <h3>Tarifa: R$ 5,60</h3>
 
                         <p id="dataAtual"></p>
+                        {{#forEach horarios}}
+                        <div>
+                            {{#forEach partidas}}
+                            {{#if (or (eq partida "Partida Lapinhaㅤ") (eq partida "Partida Aeronautasㅤ"))}}
+                            <h3>{{partida}}</h3>
+                            <ul>
+                                {{#if (diaDaSemana "domingo")}}
+                                {{#each horarioDomingo}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "sabado")}}
+                                {{#each horarioSabado}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "diaUtil")}}
+                                {{#each horarioDiaUtil}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                            </ul>
+                            {{/if}}
+                            {{/forEach}}
+                        </div>
+                        {{/forEach}}
 
-
-                        <ul id="horariosDiv2" class="horarios"></ul>
-                        <ul id="aeronautas" class="horarios"></ul>
                     </div>
 
                 </div>
@@ -83,9 +106,32 @@
                         <h3>Tarifa: R$ 5,60</h3>
 
                         <p id="dataAtual"></p>
-
-                        <ul id="horariosDiv3" class="horarios"></ul>
-                        <ul id="lapinha/lagos" class="horarios"></ul>
+                        {{#forEach horarios}}
+                        <div>
+                            {{#forEach partidas}}
+                            {{#if (or (eq partida "Partida Lapinhaㅤㅤ") (eq partida "Partida Recanto da Lagoa"))}}
+                            <h3>{{partida}}</h3>
+                            <ul>
+                                {{#if (diaDaSemana "domingo")}}
+                                {{#each horarioDomingo}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "sabado")}}
+                                {{#each horarioSabado}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "diaUtil")}}
+                                {{#each horarioDiaUtil}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                            </ul>
+                            {{/if}}
+                            {{/forEach}}
+                        </div>
+                        {{/forEach}}
                     </div>
 
                 </div>
@@ -107,10 +153,32 @@
                         <h3>Tarifa: R$ 5,60</h3>
 
                         <p id="dataAtual"></p>
-
-
-                        <ul id="horariosDiv4" class="horarios"></ul>
-                        <ul id="lapinha/vista" class="horarios"></ul>
+                        {{#forEach horarios}}
+                        <div>
+                            {{#forEach partidas}}
+                            {{#if (or (eq partida "Partida Lapinhaㅤㅤㅤ") (eq partida "Partida Vista Alegre"))}}
+                            <h3>{{partida}}</h3>
+                            <ul>
+                                {{#if (diaDaSemana "domingo")}}
+                                {{#each horarioDomingo}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "sabado")}}
+                                {{#each horarioSabado}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "diaUtil")}}
+                                {{#each horarioDiaUtil}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                            </ul>
+                            {{/if}}
+                            {{/forEach}}
+                        </div>
+                        {{/forEach}}
                     </div>
 
                 </div>
@@ -132,9 +200,32 @@
                         <h3>Tarifa: R$ 5,60</h3>
 
                         <p id="dataAtual"></p>
-
-                        <ul id="horariosDiv5" class="horarios"></ul>
-                        <ul id="campinho" class="horarios"></ul>
+                        {{#forEach horarios}}
+                        <div>
+                            {{#forEach partidas}}
+                            {{#if (or (eq partida "Partida Campinho") (eq partida "Partida Francisco Pereira"))}}
+                            <h3>{{partida}}</h3>
+                            <ul>
+                                {{#if (diaDaSemana "domingo")}}
+                                {{#each horarioDomingo}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "sabado")}}
+                                {{#each horarioSabado}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "diaUtil")}}
+                                {{#each horarioDiaUtil}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                            </ul>
+                            {{/if}}
+                            {{/forEach}}
+                        </div>
+                        {{/forEach}}
                     </div>
 
                 </div>
@@ -157,9 +248,32 @@
                         <h3>Tarifa: R$ 5,60</h3>
 
                         <p id="dataAtual"></p>
-
-                        <ul id="horariosDiv6" class="horarios"></ul>
-                        <ul id="aeronautas/campinho" class="horarios"></ul>
+                        {{#forEach horarios}}
+                        <div>
+                            {{#forEach partidas}}
+                            {{#if (or (eq partida "Partida Campinho") (eq partida "Partida Aeronautasㅤㅤ"))}}
+                            <h3>{{partida}}</h3>
+                            <ul>
+                                {{#if (diaDaSemana "domingo")}}
+                                {{#each horarioDomingo}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "sabado")}}
+                                {{#each horarioSabado}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "diaUtil")}}
+                                {{#each horarioDiaUtil}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                            </ul>
+                            {{/if}}
+                            {{/forEach}}
+                        </div>
+                        {{/forEach}}
                     </div>
 
                 </div>
@@ -181,9 +295,32 @@
                         <h3>Tarifa: R$ 5,60</h3>
 
                         <p id="dataAtual"></p>
-
-                        <ul id="horariosDiv7" class="horarios"></ul>
-                        <ul id="palmital" class="horarios"></ul>
+                        {{#forEach horarios}}
+                        <div>
+                            {{#forEach partidas}}
+                            {{#if (or (eq partida "Partida Palmital ao Cimitério") (eq partida "Partida Rodoviária ao Cimitério"))}}
+                            <h3>{{partida}}</h3>
+                            <ul>
+                                {{#if (diaDaSemana "domingo")}}
+                                {{#each horarioDomingo}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "sabado")}}
+                                {{#each horarioSabado}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "diaUtil")}}
+                                {{#each horarioDiaUtil}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                            </ul>
+                            {{/if}}
+                            {{/forEach}}
+                        </div>
+                        {{/forEach}}
                     </div>
 
                 </div>
@@ -205,9 +342,32 @@
                         <h3>Tarifa: R$ 5,60</h3>
 
                         <p id="dataAtual"></p>
-
-                        <ul id="horariosDiv8" class="horarios"></ul>
-                        <ul id="palmital/cemiterio" class="horarios"></ul>
+                        {{#forEach horarios}}
+                        <div>
+                            {{#forEach partidas}}
+                            {{#if (or (eq partida "Partida Joá") (eq partida "Partida Palmital"))}}
+                            <h3>{{partida}}</h3>
+                            <ul>
+                                {{#if (diaDaSemana "domingo")}}
+                                {{#each horarioDomingo}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "sabado")}}
+                                {{#each horarioSabado}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "diaUtil")}}
+                                {{#each horarioDiaUtil}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                            </ul>
+                            {{/if}}
+                            {{/forEach}}
+                        </div>
+                        {{/forEach}}
                     </div>
 
                 </div>
@@ -228,8 +388,32 @@
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
                         <p id="dataAtual"></p>
-                        <ul id="horariosDiv9" class="horarios"></ul>
-                        <ul id="aeronautas/nossaSenhoraDeLourdes" class="horarios"></ul>
+                        {{#forEach horarios}}
+                        <div>
+                            {{#forEach partidas}}
+                            {{#if (or (eq partida "Partida Nossa Senhora De Lourdes") (eq partida "Partida Visão"))}}
+                            <h3>{{partida}}</h3>
+                            <ul>
+                                {{#if (diaDaSemana "domingo")}}
+                                {{#each horarioDomingo}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "sabado")}}
+                                {{#each horarioSabado}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "diaUtil")}}
+                                {{#each horarioDiaUtil}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                            </ul>
+                            {{/if}}
+                            {{/forEach}}
+                        </div>
+                        {{/forEach}}
                     </div>
                 </div>
             </ul>
@@ -244,8 +428,32 @@
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
                         <p id="dataAtual"></p>
-                        <ul id="horariosDiv10" class="horarios"></ul>
-                        <ul id="morroDoCruzeiro" class="horarios"></ul>
+                        {{#forEach horarios}}
+                        <div>
+                            {{#forEach partidas}}
+                            {{#if (or (eq partida "Partida Morro Do Cruzeiro") (eq partida "Partida Vila José Fagundes"))}}
+                            <h3>{{partida}}</h3>
+                            <ul>
+                                {{#if (diaDaSemana "domingo")}}
+                                {{#each horarioDomingo}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "sabado")}}
+                                {{#each horarioSabado}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "diaUtil")}}
+                                {{#each horarioDiaUtil}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                            </ul>
+                            {{/if}}
+                            {{/forEach}}
+                        </div>
+                        {{/forEach}}
                     </div>
                 </div>
             </ul>
@@ -259,8 +467,32 @@
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
                         <p id="dataAtual"></p>
-                        <ul id="horariosDiv11" class="horarios"></ul>
-                        <ul id="lagoaSanta" class="horarios"></ul>
+                        {{#forEach horarios}}
+                        <div>
+                            {{#forEach partidas}}
+                            {{#if (or (eq partida "Partida Lagoa Santa") (eq partida "Partida Aeroporto"))}}
+                            <h3>{{partida}}</h3>
+                            <ul>
+                                {{#if (diaDaSemana "domingo")}}
+                                {{#each horarioDomingo}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "sabado")}}
+                                {{#each horarioSabado}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "diaUtil")}}
+                                {{#each horarioDiaUtil}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                            </ul>
+                            {{/if}}
+                            {{/forEach}}
+                        </div>
+                        {{/forEach}}
                     </div>
                 </div>
             </ul>
@@ -274,8 +506,32 @@
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
                         <p id="dataAtual"></p>
-                        <ul id="horariosDiv12" class="horarios"></ul>
-                        <ul id="lapinha/distritoIndustrial" class="horarios"></ul>
+                        {{#forEach horarios}}
+                        <div>
+                            {{#forEach partidas}}
+                            {{#if (or (eq partida "Partida Lapinha ao Distrito Industrial"))}}
+                            <h3>{{partida}}</h3>
+                            <ul>
+                                {{#if (diaDaSemana "domingo")}}
+                                {{#each horarioDomingo}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "sabado")}}
+                                {{#each horarioSabado}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                                {{#if (diaDaSemana "diaUtil")}}
+                                {{#each horarioDiaUtil}}
+                                <li class="horarios">{{this}}</li>
+                                {{/each}}
+                                {{/if}}
+                            </ul>
+                            {{/if}}
+                            {{/forEach}}
+                        </div>
+                        {{/forEach}}
                     </div>
                 </div>
             </ul>
