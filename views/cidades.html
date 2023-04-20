@@ -95,7 +95,8 @@
                         <h3>Tarifa: R$ 5,60</h3>
                         
                         <p id="dataAtual"></p>
-                        <button class="calendario"></button>
+                        <button id="btn-calendar" class="calendario"></button>
+                        <div id="calendar-container"></div>
                         {{#forEach horarios}}
                         {{#forEach partidas}}
                         {{#if (or (eq partida "Partida Lapinhaㅤㅤ") (eq partida "Partida Recanto da Lagoa"))}}

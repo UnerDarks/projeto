@@ -23,8 +23,27 @@
     transition: opacity 0.5s ease;
 
   }
+  
+  #calendar-container {
+    display: none;
+  }
+  
+  #calendar-container.show {
+    display: block;
+  }
+  
 
 /*//CONTAINER//*/
+.calendario {
+  background-image: url('../img/calendar.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px; /* ajuste o tamanho de acordo com sua preferência */
+  height: 30px; /* ajuste o tamanho de acordo com sua preferência */
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
 
 .container {
     box-shadow: 0 4px 8px var(--caixa-preta);
