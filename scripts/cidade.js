@@ -8,9 +8,7 @@ var diasDaSemana = {
   6: "Sábado"
 };
 
-function log(){
-  console.log('caio')
-};
+
 
 //ANIMAÇÃO
 function toggleDiv(id) {
@@ -92,8 +90,11 @@ function mesCompleto() {
   }
 }
 
-var dataAtual = document.getElementById("dataAtual");
-dataAtual.innerHTML = "Data atual: " + diaCompleto() + dia + "/" + mesCompleto() + mes + "/" + ano + " - " + diasDaSemana[data.getDay()];
+var dataAtual = document.querySelectorAll('#dataAtual');
 
+dataAtual.forEach((dataAtual)=>{
+  dataAtual.innerHTML = "Data atual: " + diaCompleto() + dia + "/" + mesCompleto() + mes + "/" + ano + " - " + diasDaSemana[data.getDay()];
+
+})
 
 
