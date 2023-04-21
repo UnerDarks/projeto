@@ -8,11 +8,21 @@
                 <li class="icone" type="button" id="botao1">
                     <a class="apresentacao__conteudo__sugestoes">Linha 3001- Lagoinha de Fora / Santos Dumont (atende
                         OvídeoGuerra)</a><br><br>
-                        
-                        <div id="divHidden1" class="container divHidden">
+                </li>
+
+                <div id="divHidden1" class="container divHidden">
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
                         <p id="dataAtual"></p>
+                        <div style="display: flex;">
+                        <button id="btn-calendar" class="calendario"></button>
+                        <select>
+                            <option value="" disabled selected id="opcao-placeholder" hidden>Mude de horario aqui!!</option>
+                            <option value="elemento1">Dias Uteis</option>
+                            <option value="elemento2">Sabado</option>
+                            <option value="elemento2">Domingo</option>
+                        </select> 
+                        </div>                         
                         {{#forEach horarios}}
                         {{#forEach partidas}}
                         {{#if (or (eq partida "Partida Lagoinha De Fora") (eq partida "Partida Santos Dumont"))}}
@@ -39,7 +49,7 @@
                         {{/forEach}}
                     </div>
                 </div>
-            </li>
+                </li>
             </ul>
         </div>
         <div>
@@ -48,8 +58,9 @@
                 <li class="icone" type="button" id="botao2">
                     <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3002- Lapinha / Aeronautas (extensão do
                         Aeronautas)</a><br><br>
-                        <div id="divHidden2" class="container divHidden">
-                            <div class="box">
+                </li>
+                <div id="divHidden2" class="container divHidden">
+                    <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
 
                         <p id="dataAtual"></p>
@@ -79,24 +90,24 @@
                         {{/forEach}}
                     </div>
                 </div>
-            </li>
+                </li>
             </ul>
         </div>
-        
+
 
         <div>
-            
+
             <ul style="list-style-type:none">
                 <li class="icone" type="button" id="botao3">
-                    <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3003 - Lapinha / Recanto da Lagoa</a><br><br>
-                    <div id="divHidden3" class="container divHidden">
-                        
-                        <div class="box">
+                    <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3003 - Lapinha / Recanto da
+                        Lagoa</a><br><br>
+                </li>
+                <div id="divHidden3" class="container divHidden">
+
+                    <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
-                        
+
                         <p id="dataAtual"></p>
-                        <button id="btn-calendar" class="calendario"></button>
-                        <div id="calendar-container"></div>
                         {{#forEach horarios}}
                         {{#forEach partidas}}
                         {{#if (or (eq partida "Partida Lapinhaㅤㅤ") (eq partida "Partida Recanto da Lagoa"))}}
@@ -124,19 +135,19 @@
                     </div>
 
                 </div>
-                
-            </li>
+
+                </li>
             </ul>
         </div>
 
-        
+
         <div>
             <ul style="list-style-type:none">
                 <li class="icone" type="button" id="botao4">
                     <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3004 - Lapinha / Vista Alegre (atende
                         Aeroporto)</a><br><br>
-                        
-                        <div id="divHidden4" class="container divHidden">
+                </li>
+                <div id="divHidden4" class="container divHidden">
 
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
@@ -170,8 +181,8 @@
 
                 </div>
 
-                
-            </li>
+
+                </li>
             </ul>
         </div>
 
@@ -179,13 +190,14 @@
         <div>
             <ul style="list-style-type:none">
                 <li class="icone" type="button" id="botao5">
-                    <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3005 - Campinho / Francisco Pereira</a><br><br>
-                    
+                    <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3005 - Campinho / Francisco
+                        Pereira</a><br><br>
+                </li>
                 <div id="divHidden5" class="container divHidden">
 
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
-                        
+
                         <p id="dataAtual"></p>
                         {{#forEach horarios}}
                         {{#forEach partidas}}
@@ -215,19 +227,19 @@
 
                 </div>
 
-                
-            </li>
+
+                </li>
             </ul>
         </div>
-        
-        
+
+
         <div>
             <ul style="list-style-type:none">
                 <li class="icone" type="button" id="botao6">
                     <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3006 - Campinho / Palmital /
                         Aeronautas</a><br><br>
-                        
-                        <div id="divHidden6" class="container divHidden">
+                </li>
+                <div id="divHidden6" class="container divHidden">
 
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
@@ -261,8 +273,8 @@
 
                 </div>
 
-                
-            </li>
+
+                </li>
             </ul>
         </div>
 
@@ -271,37 +283,38 @@
             <ul style="list-style-type:none">
                 <li class="icone" type="button" id="botao7">
                     <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3007 - Palmital / Rodoviária</a><br><br>
-                    <div id="divHidden7" class="container divHidden">
-                        <div class="box">
-                            <h3>Tarifa: R$ 5,60</h3>
-                            <p id="dataAtual"></p>
-                            {{#forEach horarios}}
-                            {{#forEach partidas}}
-                            {{#if (or (eq partida "Partida Palmital ao Cimitério") (eq partida "Partida Rodoviária ao
-                            Cimitério"))}}
-                            <h3>{{partida}}</h3>
-                            <ul>
-                                {{#if (diaDaSemana "domingo")}}
-                                {{#each horarioDomingo}}
-                                <li class="horarios">{{this}}</li>
-                                {{/each}}
-                                {{/if}}
-                                {{#if (diaDaSemana "sabado")}}
-                                {{#each horarioSabado}}
-                                <li class="horarios">{{this}}</li>
-                                {{/each}}
-                                {{/if}}
-                                {{#if (diaDaSemana "diaUtil")}}
-                                {{#each horarioDiaUtil}}
-                                <li class="horarios">{{this}}</li>
-                                {{/each}}
-                                {{/if}}
-                            </ul>
+                </li>
+                <div id="divHidden7" class="container divHidden">
+                    <div class="box">
+                        <h3>Tarifa: R$ 5,60</h3>
+                        <p id="dataAtual"></p>
+                        {{#forEach horarios}}
+                        {{#forEach partidas}}
+                        {{#if (or (eq partida "Partida Palmital ao Cimitério") (eq partida "Partida Rodoviária ao
+                        Cimitério"))}}
+                        <h3>{{partida}}</h3>
+                        <ul>
+                            {{#if (diaDaSemana "domingo")}}
+                            {{#each horarioDomingo}}
+                            <li class="horarios">{{this}}</li>
+                            {{/each}}
                             {{/if}}
-                            {{/forEach}}
-                            {{/forEach}}
-                        </div>
+                            {{#if (diaDaSemana "sabado")}}
+                            {{#each horarioSabado}}
+                            <li class="horarios">{{this}}</li>
+                            {{/each}}
+                            {{/if}}
+                            {{#if (diaDaSemana "diaUtil")}}
+                            {{#each horarioDiaUtil}}
+                            <li class="horarios">{{this}}</li>
+                            {{/each}}
+                            {{/if}}
+                        </ul>
+                        {{/if}}
+                        {{/forEach}}
+                        {{/forEach}}
                     </div>
+                </div>
                 </li>
             </ul>
         </div>
@@ -312,10 +325,10 @@
             <ul style="list-style-type:none">
                 <li class="icone" type="button" id="botao8">
                     <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3008 - Joá / Palmital</a><br><br>
-                    
-                    <div id="divHidden8" class="container divHidden">
+                </li>
+                <div id="divHidden8" class="container divHidden">
 
-                        <div class="box">
+                    <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
 
                         <p id="dataAtual"></p>
@@ -344,10 +357,10 @@
                         {{/forEach}}
                         {{/forEach}}
                     </div>
-                    
+
                 </div>
 
-            </li>
+                </li>
 
             </ul>
         </div>
@@ -358,8 +371,9 @@
                 <li class="icone" type="button" id="botao9">
                     <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3009 - Nossa Senhora de Lourdes / Visão
                         c.atendimento ao Aeronautas</a><br><br>
-                        <div id="divHidden9" class="container divHidden">
-                            
+                </li>
+                <div id="divHidden9" class="container divHidden">
+
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
                         <p id="dataAtual"></p>
@@ -389,7 +403,7 @@
                         {{/forEach}}
                     </div>
                 </div>
-            </li>
+                </li>
             </ul>
         </div>
         <div>
@@ -397,7 +411,7 @@
                 <li class="icone" type="button" id="botao10">
                     <a class="apresentacao__conteudo__sugestoes">LINHA 3010 - Morro do Cruzeiro / Vila José Fagundes
                         (atende Jardim Imperial / Acacias)</a><br><br>
-           
+                </li>
                 <div id="divHidden10" class="container divHidden">
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
@@ -428,14 +442,14 @@
                         {{/forEach}}
                     </div>
                 </div>
-            </li>
+                </li>
             </ul>
         </div>
         <div>
             <ul style="list-style-type:none">
                 <li class="icone" type="button" id="botao11">
                     <a class="apresentacao__conteudo__sugestoes">LINHA 3011 - Lagoa Santa / Aeroporto</a><br><br>
-               
+                </li>
                 <div id="divHidden11" class="container divHidden">
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
@@ -466,14 +480,15 @@
                         {{/forEach}}
                     </div>
                 </div>
-            </li>
+                </li>
             </ul>
         </div>
         <div>
             <ul style="list-style-type:none">
                 <li class="icone" type="button" id="botao12">
-                    <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3012 - Lapinha / Distrito Industrial</a><br><br>
-                
+                    <a class=" linhas apresentacao__conteudo__sugestoes">LINHA 3012 - Lapinha / Distrito
+                        Industrial</a><br><br>
+                </li>
                 <div id="divHidden12" class="container divHidden">
                     <div class="box">
                         <h3>Tarifa: R$ 5,60</h3>
@@ -504,7 +519,7 @@
                         {{/forEach}}
                     </div>
                 </div>
-            </li>
+
             </ul>
         </div>
 

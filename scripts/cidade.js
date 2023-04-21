@@ -97,4 +97,12 @@ dataAtual.forEach((dataAtual)=>{
 
 })
 
+//Select//
+const minhaSelecao = document.getElementById("minha-selecao");
+
+minhaSelecao.addEventListener("change", function() {
+  const opcaoPlaceholder = document.getElementById("opcao-placeholder");
+  opcaoPlaceholder.hidden = true;
+});
+
 
