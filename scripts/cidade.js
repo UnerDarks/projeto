@@ -98,11 +98,46 @@ dataAtual.forEach((dataAtual)=>{
 })
 
 //Select//
-const minhaSelecao = document.getElementById("minha-selecao");
+function mostrarHorarios() {
+  var select = document.getElementById("dia");
+  var opcaoSelecionada = select.options[select.selectedIndex].value;
+  var horarios = document.getElementsByClassName("horarios");
+  for (var i = 0; i < horarios.length; i++) {
+    if (horarios[i].classList.contains(opcaoSelecionada)) {
+      horarios[i].style.display = "block";
+    } else {
+      horarios[i].style.display = "none";
+    }
+  }
 
-minhaSelecao.addEventListener("change", function() {
-  const opcaoPlaceholder = document.getElementById("opcao-placeholder");
-  opcaoPlaceholder.hidden = true;
-});
+  var partidas = document.getElementsByClassName("partidas");
+  for (var i = 0; i < partidas.length; i++) {
+    var partida = partidas[i].textContent.trim();
+    var horariosHTML = "";
+    var horariosDiaUtil = partidas[i].getAttribute("data-dia-util").split(",");
+    var horariosSabado = partidas[i].getAttribute("data-sabado").split(",");
+    var horariosDomingo = partidas[i].getAttribute("data-domingo").split(",");
+    
+    if (['Partida Lagoinha De Fora', 'Partida Santos Dumont'].includes(partida)) {
+      if (opcaoSelecionada == "domingo") {
+        for (var j = 0; j < horariosDomingo.length; j++) {
+          horariosHTML += '<li class="horarios domingo">' + horariosDomingo[j] + '</li>';
+        }
+      } else if (opcaoSelecionada == "sabado") {
+        for (var j = 0; j < horariosSabado.length; j++) {
+          horariosHTML += '<li class="horarios sabado">' + horariosSabado[j] + '</li>';
+        }
+      } else {
+        for (var j = 0; j < horariosDiaUtil.length; j++) {
+          horariosHTML += '<li class="horarios dias_uteis">' + horariosDiaUtil[j] + '</li>';
+        }
+      }
+    }
+    
+    partidas[i].nextElementSibling.innerHTML = horariosHTML;
+  }
+}
+
+  
 
 

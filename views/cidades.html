@@ -15,14 +15,14 @@
                         <h3>Tarifa: R$ 5,60</h3>
                         <p id="dataAtual"></p>
                         <div style="display: flex;">
-                        <button id="btn-calendar" class="calendario"></button>
-                        <select>
-                            <option value="" disabled selected id="opcao-placeholder" hidden>Mude de horario aqui!!</option>
-                            <option value="elemento1">Dias Uteis</option>
-                            <option value="elemento2">Sabado</option>
-                            <option value="elemento2">Domingo</option>
-                        </select> 
-                        </div>                         
+                            <button id="btn-calendar" class="calendario"></button>
+                            <select id="dia" onchange="mostrarHorarios()">
+                                <option value="" disabled selected id="opcao-placeholder" hidden>Escolha o dia da semana</option>
+                                <option value="dias_uteis">Dias úteis</option>
+                                <option value="sabado">Sábado</option>
+                                <option value="domingo">Domingo</option>
+                            </select>  
+                        </div>
                         {{#forEach horarios}}
                         {{#forEach partidas}}
                         {{#if (or (eq partida "Partida Lagoinha De Fora") (eq partida "Partida Santos Dumont"))}}
@@ -30,17 +30,17 @@
                         <ul>
                             {{#if (diaDaSemana "domingo")}}
                             {{#each horarioDomingo}}
-                            <li class="horarios">{{this}}</li>
+                            <li class="horarios domingo">{{this}}</li>
                             {{/each}}
                             {{/if}}
                             {{#if (diaDaSemana "sabado")}}
                             {{#each horarioSabado}}
-                            <li class="horarios">{{this}}</li>
+                            <li class="horarios sabado">{{this}}</li>
                             {{/each}}
                             {{/if}}
                             {{#if (diaDaSemana "diaUtil")}}
                             {{#each horarioDiaUtil}}
-                            <li class="horarios">{{this}}</li>
+                            <li class="horarios dias_uteis">{{this}}</li>
                             {{/each}}
                             {{/if}}
                         </ul>
@@ -49,7 +49,6 @@
                         {{/forEach}}
                     </div>
                 </div>
-                </li>
             </ul>
         </div>
         <div>
