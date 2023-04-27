@@ -138,6 +138,14 @@ function mostrarHorarios() {
   }
 }
 
+
+//Search
+
+function pesquisa() {
+  pesquisa.addEventListener(click, function(){
+    
+  } )
+}
   
 
 
