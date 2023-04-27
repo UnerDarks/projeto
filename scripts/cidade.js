@@ -90,12 +90,54 @@ function mesCompleto() {
   }
 }
 
-var dataAtual = document.getElementById("dataAtual");
-dataAtual.innerHTML = "Data atual: " + diaCompleto() + dia + "/" + mesCompleto() + mes + "/" + ano + " - " + diasDaSemana[data.getDay()];
+var dataAtual = document.querySelectorAll('#dataAtual');
 
-//Mudar o horario de acordo com os dias da semana 
-var keyCliente = 5;
-var divExibir = document.getElementById("divExibir")
-for (var i = 1; i <= keyCliente; i++) {
-    divExibir.innerHTML += i + '<br>';
+dataAtual.forEach((dataAtual)=>{
+  dataAtual.innerHTML = "Data atual: " + diaCompleto() + dia + "/" + mesCompleto() + mes + "/" + ano + " - " + diasDaSemana[data.getDay()];
+
+})
+
+//Select//
+function mostrarHorarios() {
+  var select = document.getElementById("dia");
+  var opcaoSelecionada = select.options[select.selectedIndex].value;
+  var horarios = document.getElementsByClassName("horarios");
+  for (var i = 0; i < horarios.length; i++) {
+    if (horarios[i].classList.contains(opcaoSelecionada)) {
+      horarios[i].style.display = "block";
+    } else {
+      horarios[i].style.display = "none";
+    }
+  }
+
+  var partidas = document.getElementsByClassName("partidas");
+  for (var i = 0; i < partidas.length; i++) {
+    var partida = partidas[i].textContent.trim();
+    var horariosHTML = "";
+    var horariosDiaUtil = partidas[i].getAttribute("data-dia-util").split(",");
+    var horariosSabado = partidas[i].getAttribute("data-sabado").split(",");
+    var horariosDomingo = partidas[i].getAttribute("data-domingo").split(",");
+    
+    if (['Partida Lagoinha De Fora', 'Partida Santos Dumont'].includes(partida)) {
+      if (opcaoSelecionada == "domingo") {
+        for (var j = 0; j < horariosDomingo.length; j++) {
+          horariosHTML += '<li class="horarios domingo">' + horariosDomingo[j] + '</li>';
+        }
+      } else if (opcaoSelecionada == "sabado") {
+        for (var j = 0; j < horariosSabado.length; j++) {
+          horariosHTML += '<li class="horarios sabado">' + horariosSabado[j] + '</li>';
+        }
+      } else {
+        for (var j = 0; j < horariosDiaUtil.length; j++) {
+          horariosHTML += '<li class="horarios dias_uteis">' + horariosDiaUtil[j] + '</li>';
+        }
+      }
+    }
+    
+    partidas[i].nextElementSibling.innerHTML = horariosHTML;
+  }
 }
+
+  
+
+

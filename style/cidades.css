@@ -23,32 +23,71 @@
     transition: opacity 0.5s ease;
 
   }
+  
+
 
 /*//CONTAINER//*/
+.calendario {
+  background-image: url('../img/calendar.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px; /* ajuste o tamanho de acordo com sua preferência */
+  height: 30px; /* ajuste o tamanho de acordo com sua preferência */
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+select {
+  padding: 5px;
+  height: 32px;
+  float: inline-start;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 11px;
+  border: 1px solid #146C94;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-left: 6px;
+}
+
+option {
+  text-align: center;
+  background-color: var(--fundo-container);
+  border-radius: 5px;
+}
+
 .container {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px var(--caixa-preta);
+    border: 1px solid var(--container);
     padding: 20px;
     height: 150;
     border-radius: 10px;
-    background-color: #ecebeb;
+    background-color: var(--fundo-container);
   }
   
   
   .box {
-    background-color: #eeeded;
+    background-color: var(--color-box);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
   .container .box li {
-    border: 1px solid #ccc;
+    border: 1px solid var(--container);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     width: 75px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: center;
   }
 
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
   .container .box h3 {
     text-align: center;
   }
@@ -58,28 +97,20 @@
   #dataAtual {
     color: var(--cor-terciaria)
   }
-
+  
   .horarios {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: space-between;
-    gap: 16px;
+    display: inline-block;
+    
+    width: 30%;
+    text-align: center;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  
   }
 
   .container .box h3 {
     color: var(--cor-terciaria)
   }
-
-  .btn {
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-  }
-  .btn:hover {
-    cursor: pointer;
-  }
-
 
 /*Mudei cidades */
 
@@ -90,7 +121,7 @@
   
   .icone::before { 
     content: "";
-    border-color: transparent #111;
+    border-color: transparent var(--borda-caixa);
     border-style: solid;
     border-width: 0.35em 0 0.35em 0.45em;
     display: block;
@@ -99,4 +130,14 @@
     left: -1em;
     top: 0.9em;
     position: relative;
+  }
+
+  a:link, a:visited {
+    color: var(--font-textos);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a:link:active, a:visited:active {
+    color: var(--font-textos);
   }
