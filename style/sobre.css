@@ -37,5 +37,17 @@
     align-items: stretch;
 }
 
+.botao-sub {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 455px;
+    cursor: pointer;
+}
+
+.botao-sub:hover {
+    cursor: pointer;
+
+}
+
 
 

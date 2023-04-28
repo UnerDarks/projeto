@@ -100,6 +100,14 @@ dataAtual.forEach((dataAtual)=>{
 //Select//
 
 
+
+//Search
+
+function pesquisa() {
+  pesquisa.addEventListener(click, function(){
+    
+  } )
+}
   
 
 
