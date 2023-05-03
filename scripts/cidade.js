@@ -103,10 +103,12 @@ dataAtual.forEach((dataAtual)=>{
 
 //Search
 
-function pesquisa() {
-  pesquisa.addEventListener(click, function(){
-    
-  } )
+function mostrarHorarios(){
+  var diaSelecionado =  document.getElementById("dia")
+  console.log(">>>>>>>>>>>>>>>>>>>>>>>>>",diaSelecionado.value)
+
+
+  
 }
   
 
